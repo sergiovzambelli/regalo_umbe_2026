@@ -1,0 +1,124 @@
+{
+ "url": "http://localhost:3123/",
+ "views": {
+  "desktop": {
+   "width": 1440,
+   "height": 900,
+   "navH": 0,
+   "scrollHeight": 3818,
+   "screens": 4.24,
+   "sections": [
+    {
+     "n": 1,
+     "tag": "section",
+     "id": "",
+     "cls": "hero",
+     "top": 0,
+     "h": 1009,
+     "hScreens": 1.12,
+     "offGrid": 109,
+     "tiles": [
+      {
+       "file": "desktop-sec-01-a.jpg",
+       "scrollY": 0
+      },
+      {
+       "file": "desktop-sec-01-b.jpg",
+       "scrollY": 109
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "tag": "div",
+     "id": "",
+     "cls": "ticker",
+     "top": 989,
+     "h": 117,
+     "hScreens": 0.13,
+     "offGrid": 117,
+     "tiles": [
+      {
+       "file": "desktop-sec-02-a.jpg",
+       "scrollY": 989
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "tag": "section",
+     "id": "",
+     "cls": "lore",
+     "top": 1085,
+     "h": 1156,
+     "hScreens": 1.28,
+     "offGrid": 256,
+     "tiles": [
+      {
+       "file": "desktop-sec-03-a.jpg",
+       "scrollY": 1085
+      },
+      {
+       "file": "desktop-sec-03-b.jpg",
+       "scrollY": 1341
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "tag": "section",
+     "id": "",
+     "cls": "crew",
+     "top": 2241,
+     "h": 688,
+     "hScreens": 0.76,
+     "offGrid": 688,
+     "tiles": [
+      {
+       "file": "desktop-sec-04-a.jpg",
+       "scrollY": 2241
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "tag": "section",
+     "id": "data",
+     "cls": "pick",
+     "top": 2930,
+     "h": 787,
+     "hScreens": 0.87,
+     "offGrid": 787,
+     "tiles": [
+      {
+       "file": "desktop-sec-05-a.jpg",
+       "scrollY": 2918,
+       "cutTop": 12,
+       "height": 787
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "tag": "footer",
+     "id": "",
+     "cls": "foot",
+     "top": 3717,
+     "h": 102,
+     "hScreens": 0.11,
+     "offGrid": 102,
+     "tiles": [
+      {
+       "file": "desktop-sec-06-a.jpg",
+       "scrollY": 2918,
+       "cutTop": 799,
+       "height": 101
+      }
+     ]
+    }
+   ],
+   "consoleErrors": []
+  }
+ },
+ "at": "2026-11-10T10:46:22.371Z"
+}

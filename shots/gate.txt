@@ -1,0 +1,140 @@
+gate: checking http://localhost:3123/ (gaming); this takes a few minutes on a CPU Chrome
+gate: 45 FAIL open
+  FAIL assets           (the page)  [1440]
+       the stylesheet _next/static/chunks/3urlwepsfn_f9.css did not load (500): everything here was measured without it
+       fix: fix the path, or remove the reference
+  FAIL hero-fill        main > section.lore "La leggenda"  [1440]
+       the next section shows on the first screen: it starts at 281px on a 900px screen (the hero ends at 226px)
+       fix: let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load
+  FAIL nav              (the first screen)  [1440, 390]
+       no nav bar across the top of the first screen (a header with the brand, the section links and the main action)
+       fix: make the nav one bar from the content's left edge to its right edge, with every link and action inside it
+  FAIL no-visual        main > section.crew "La squadra"  [1440, 390]
+       no picture, effect or mock in this section; a feature section needs a visual
+       fix: give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits
+  FAIL cta              main > section.hero  [1440, 390]
+       the hero has no button (the nav's does not count)
+       fix: add the action: a button in the hero, one on every priced item, one in the closing section
+  FAIL cta              section#data "Scegli il giorno della battaglia"  [1440, 390]
+       the last section before the footer ends with no button
+       fix: add the action: a button in the hero, one on every priced item, one in the closing section
+  FAIL copy-headline    main > section.hero > div.wrap.hero-in > h1.mega "UMBEJAM"  [1440]
+       "UMBEJAM" does not name what is sold (prima, gamejam, from the page title); only the line under it does
+       fix: put the category noun in the h1 (and who it is for, or where), in 2 to 8 words
+  FAIL copy-headings    main > section.lore > div.wrap > h2.label "La leggenda"  [1440]
+       "La leggenda" names no product, part, place or section (3 headings like it; at most one brand line per page) (and 2 more like it: "La squadra", "Scegli il giorno della b")
+       fix: name the thing in every heading: the product, a part, the place or a section noun
+  FAIL section-gaps     main > section.hero / main > section.lore  [1440]
+       56px between these sections, +167% against the median 21px
+       fix: use one gap between sections (all within 25% of each other)
+  FAIL empty-area       main > section.crew "La squadra"  [1440]
+       85% of the section is empty: 85% beside content that covers under half the container, in its 623px of rows (WARN over 35%, FAIL over 50%)
+       fix: fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)
+  FAIL hero-enter       main > section.hero  [1440]
+       the hero does not enter on load: no data-enter on the hero and no head line setting html.m-enter (motion.md, The hero's entrance)
+       fix: put data-enter on the hero <section> and keep the head line from starter.html that sets html.m-enter
+  FAIL moment-none      (the page)  [1440]
+       a gaming page (--type) deals no moment: every kind carries one, two on a long page (moments.md)
+       fix: deal one (moments.mjs pick --page gaming) and mount it in its own section
+  FAIL hero-screen      main > section.hero "Invito ufficiale · Livello 1UMBEJAMLa pr"  [1440]
+       the hero ends at 226px on a 900px screen, 674px above the fold: it ends at the fold, 1px either way (SR-1)
+       fix: make the hero exactly one screen (height: 100svh, its content fitted inside), never taller or shorter
+  FAIL hero-screen      main > div.ticker "Game Jam✦Direttore artistico: Umberto✦2 "  [1440]
+       658px of the next section shows on the first screen (from 242px on a 900px screen): nothing below the hero shows at load (SR-1)
+       fix: end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)
+  FAIL section-height   footer.foot "Fatto con amore, ritardo e troppi token."  [1440]
+       the section is 18px tall (0 screens), 882px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+       fix: set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit
+  FAIL section-height   main > div.ticker "Game Jam✦Direttore artistico: Umberto✦2 "  [1440]
+       the section is 19px tall (0 screens), 881px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+       fix: set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit
+  FAIL section-height (screen-short, screen-height) section#data "Scegli il giorno della battagliaClicca u"  [1440, 390]
+       the section is 123px tall (0.1 screens), 777px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 2 more like it: "La leggendaOgni anno un ", "La squadraP1UDirettore a") (
+       fix: set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit
+  FAIL section-height   main > section.crew "La squadraP1UDirettore artisticoUmbertoV"  [1440]
+       the section starts at 468px, 432px above the screen grid (1 x 900px): sections start on whole screens (SR-2)
+       fix: make every section above it exactly one or two screens tall, so this one starts on a whole screen
+  FAIL section-height   main > section.lore "La leggendaOgni anno un uomo invecchia.Q"  [1440]
+       the section starts at 281px, 281px below the screen grid (0 x 900px): sections start on whole screens (and 3 more like it: "Game Jam✦Direttore artis", "Scegli il giorno della b", "Invito ufficiale · Livel") (SR-2)
+       fix: make every section above it exactly one or two screens tall, so this one starts on a whole screen
+  FAIL section-air      main > div.ticker / main > section.lore  [1440]
+       21px of air between the content of these two sections: 128-480px (64-600px WARN) (every gap out of the band at 1440px, top to bottom: 21px after "Game Jam✦Direttore a", 21px after "La leggendaOgni anno", 21px after "La s
+       fix: keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)
+  FAIL section-air      main > section.lore / main > section.crew  [1440]
+       21px of air between the content of these two sections: 128-480px (64-600px WARN) (SR-3)
+       fix: keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)
+  FAIL section-air      main > section.crew / section#data  [1440]
+       21px of air between the content of these two sections: 128-480px (64-600px WARN) (SR-3)
+       fix: keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)
+  FAIL one-section      main > section.hero > div.wrap.hero-in > h1.mega "UMBEJAM"  [1440]
+       the screen at scroll 0px (stride 0) shows 184px of section 1 and the heading of section 1 whole and the content of 3 sections, over 24px each beside section 4: a screen shows one section (another may peek 8px, 24px WARN)
+       fix: make each section exactly one screen or two, so a screen shows one section and no neighbour peeks
+  FAIL one-section      main > section.lore > div.wrap > h2.label "La leggenda"  [1440]
+       the screen at scroll 242px (the top of section 2) shows 167px of section 3 and the heading of section 3 whole and the content of 3 sections, over 24px each beside section 4: a screen shows one section (another may peek 8
+       fix: make each section exactly one screen or two, so a screen shows one section and no neighbour peeks
+  FAIL one-section      main > div.ticker "Game Jam✦Direttore artistico: Umberto✦2 "  [1440]
+       a <div> sits directly in <main>: every part of <main> is a <section> (SR-4)
+       fix: put every block of <main> in a <section>, and give a band its own section instead of a ground inside one
+  FAIL one-heading      main > section.crew > div.wrap > h2.label "La squadra"  [1440]
+       headings of two sections show whole on one screen at 8 of 8 scroll positions (100%; at scroll 0, 50, 100, 150px), here with "La leggenda": at most 3% on a desktop (SR-5)
+       fix: make the sections one screen tall so their headings sit a screen apart and two never share one
+  FAIL container-edges  main > section.hero "Invito ufficiale · Livello 1UMBEJAMLa pr"  [1440]
+       the content of section 1 runs 8px from the left and 8px from the right: the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)
+       fix: use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone
+  FAIL container-edges  main > section.lore "La leggendaOgni anno un uomo invecchia.Q"  [1440]
+       the content of section 3 runs 8px from the left and 8px from the right: the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)
+       fix: use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone
+  FAIL container-edges  main > section.crew "La squadraP1UDirettore artisticoUmbertoV"  [1440]
+       the content of section 4 runs 8px from the left and 8px from the right: the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (and 2 more like it: "Scegli il giorno della b", "Fatto con amore, r
+       fix: use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone
+  FAIL container-edges  a.skip "Vai alla scelta della data"  [1440]
+       a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  footer.foot "Fatto con amore, ritardo e troppi token."  [1440]
+       a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  section.crew > div.wrap > ul.cards > li.card.boss "P1UDirettore artisticoUmbertoVisione as  [1440]
+       18 text blocks start on a left line at x 48, 40px from the container's left: text starts on the container's left, or on one split line (x 611, 732, 853) (also "U", "Direttore artistico", "Umberto") (SR-6)
+       fix: start the text on the container's left, or on the one split line every split shares
+  FAIL hero-fill        main > div.ticker "Game Jam✦Direttore artistico: Umberto✦2 "  [390]
+       the next section shows on the first screen: it starts at 279px on a 844px screen (the hero ends at 262px)
+       fix: let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load
+  FAIL tap-size         section#data > div.wrap > div.dates > button.date:nth-of-type(1) "sab05dic 2026"  [390, 320]
+       a 103x21px tap target (and 5 more like it on this screen): 0px from the next one ("dom06dic 2026"), so a thumb lands on the wrong one
+       fix: make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid pa
+  FAIL screen-short     section.hero section.hero "Invito ufficiale · Livello 1UMBE"  [1440, 390]
+       184px tall; one screen under the nav is 900px
+       fix: make the section one full screen (--h: 1, layout-v4.md section 2)
+  FAIL neighbour        section.hero section.hero "Invito ufficiale · Livello 1UMBE"  [1440, 390]
+       framed, 27px of section.lore section.lore "La leggendaOgni anno un uomo inv" shows
+       fix: keep the next section's heading and picture out of this screen
+  FAIL screen-short     section.lore section.lore "La leggendaOgni anno un uomo inv"  [1440, 390]
+       167px tall; one screen under the nav is 900px
+       fix: make the section one full screen (--h: 1, layout-v4.md section 2)
+  FAIL screen-height    section.lore section.lore "La leggendaOgni anno un uomo inv"  [1440, 390]
+       167px, 0.19 screens; a section is exactly one or two (--h)
+       fix: make the section exactly one or two screens (--h: 1 or 2)
+  FAIL neighbour        section.lore section.lore "La leggendaOgni anno un uomo inv"  [1440, 390]
+       framed, 181px of section.crew section.crew "La squadraP1UDirettore artistico" shows
+       fix: keep the next section's heading and picture out of this screen
+  FAIL screen-short     section.crew section.crew "La squadraP1UDirettore artistico"  [1440, 390]
+       623px tall; one screen under the nav is 900px
+       fix: make the section one full screen (--h: 1, layout-v4.md section 2)
+  FAIL screen-height    section.crew section.crew "La squadraP1UDirettore artistico"  [1440, 390]
+       623px, 0.69 screens; a section is exactly one or two (--h)
+       fix: make the section exactly one or two screens (--h: 1 or 2)
+  FAIL neighbour        section.crew section.crew "La squadraP1UDirettore artistico"  [1440, 390]
+       framed, 27px of #data section.pick "Scegli il giorno della battaglia" shows
+       fix: keep the next section's heading and picture out of this screen
+  FAIL neighbour        #data section.pick "Scegli il giorno della battaglia"  [1440, 390]
+       framed, 18px of the footer shows
+       fix: keep the next section's heading and picture out of this screen
+  FAIL hero-fold        section.hero section.hero "Invito ufficiale · Livello 1UMBE"  [1440, 390]
+       starts at y 42, not under the nav
+       fix: the hero fills the first screen alone, its button inside it
+  FAIL hero-fold        section.lore section.lore "La leggendaOgni anno un uomo inv"  [1440, 390]
+       shows on the first screen from y 281
+       fix: the hero fills the first screen alone, its button inside it
+  10 WARN (not blocking), first: flush main > section.lore > div.wrap > p.body ; flush div.wrap > ul.cards > li.card:nth-of-typ; copy-headline main > section.hero > div.wrap.hero-in >; heading-scale div.wrap > ul.cards > li.card.boss > h3 ; one-screen main > section.crew "La squadra"
+A FAIL you judge false: add {"check": "<id>", "target": "<its where, enough to name that one finding>", "reason": "<why, 12+ characters>"} to .taste-skill/waivers.json (one finding each, 5 at most, never for kit-edited or checker-gaming); it goes in your report. Never edit the kit's files or hide the page from the checker.
+GATE: FAIL 45 (round 1 of 3)

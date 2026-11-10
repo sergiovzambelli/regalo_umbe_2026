@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "UMBE JAM — La prima GameJam",
+    "description": "Un invito. Un direttore artistico. Due sviluppatori. Infiniti token."
+  },
+  "hero": {
+    "kicker": "Invito ufficiale · Livello 1",
+    "titleTop": "UMBE",
+    "titleBottom": "JAM",
+    "lead": "La prima GameJam della storia della compagnia. Un weekend, un videogioco, un sogno che finalmente si avvera.",
+    "cta": "Scegli il giorno",
+    "pressStart": "PRESS START"
+  },
+  "ticker": ["Game Jam", "Direttore artistico: Umberto", "2 dev", "1 Claude a testa", "Token illimitati*", "Nessuna pietà"],
+  "lore": {
+    "heading": "La leggenda",
+    "lines": [
+      "Ogni anno un uomo invecchia.",
+      "Quest'anno, un uomo",
+      "crea un mondo."
+    ],
+    "body": "Ci abbiamo messo un po' a deciderci, lo sappiamo. Ma da questa compagnia di rincoglioniti è uscita un'idea sola, ed è grossa: costruire insieme il videogioco che hai sempre avuto in testa."
+  },
+  "crew": {
+    "heading": "La squadra",
+    "members": [
+      { "role": "Direttore artistico", "name": "Umberto", "power": "Visione assoluta. L'ultima parola su tutto.", "stat": "VISIONE 99" },
+      { "role": "Sviluppatore #1", "name": "Dev uno + Claude", "power": "Scrive codice più veloce di quanto tu cambi idea.", "stat": "TOKEN ∞" },
+      { "role": "Sviluppatore #2", "name": "Dev due + Claude", "power": "Brucia token come se non ci fosse un domani.", "stat": "CAFFÈ 404" }
+    ]
+  },
+  "picker": {
+    "heading": "Scegli il giorno della battaglia",
+    "body": "Clicca una data e conferma. Puoi cambiare idea finché vuoi: vale l'ultima scelta.",
+    "confirm": "Conferma la data",
+    "sending": "Invio in corso…",
+    "already": "Hai scelto:",
+    "error": "Qualcosa è andato storto. Riprova tra un attimo."
+  },
+  "dates": ["2026-12-05", "2026-12-06", "2026-12-12", "2026-12-13", "2026-12-19", "2026-12-20"],
+  "victory": {
+    "heading": "GAME ON",
+    "body": "Data salvata. I tuoi sviluppatori stanno già scaldando i token.",
+    "close": "Torna al sito"
+  },
+  "footer": "Fatto con amore, ritardo e troppi token. * I token non sono illimitati."
+}
