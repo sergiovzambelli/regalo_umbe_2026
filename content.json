@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "UMBE JAM — La prima GameJam",
+    "title": "FW JAM — La prima GameJam",
     "description": "Un invito. Un direttore artistico. Due sviluppatori. Infiniti token."
   },
   "hero": {
     "kicker": "Invito ufficiale · Livello 1",
-    "titleTop": "UMBE",
+    "titleTop": "FW",
     "titleBottom": "JAM",
     "lead": "La prima GameJam della storia della compagnia. Un weekend, un videogioco, un sogno che finalmente si avvera.",
     "cta": "Scegli il giorno",
@@ -37,7 +37,7 @@
     "already": "Hai scelto:",
     "error": "Qualcosa è andato storto. Riprova tra un attimo."
   },
-  "dates": ["2026-12-05", "2026-12-06", "2026-12-12", "2026-12-13", "2026-12-19", "2026-12-20"],
+  "dates": ["2026-11-28", "2026-11-29", "2026-12-05", "2026-12-06", "2026-12-19", "2026-12-20"],
   "victory": {
     "heading": "GAME ON",
     "body": "Data salvata. I tuoi sviluppatori stanno già scaldando i token.",

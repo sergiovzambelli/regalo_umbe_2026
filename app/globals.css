@@ -45,7 +45,7 @@ body::after { /* CRT scanlines over everything */
 .btn.big { min-height: 64px; font-size: 17px; margin-top: 40px; }
 
 /* ---------- hero ---------- */
-.hero { position: relative; min-height: 100svh; display: grid; align-items: center; overflow: hidden; isolation: isolate; animation: shake .35s 1.05s steps(2) 1; }
+.hero { position: relative; min-height: 100svh; display: grid; align-items: center; overflow: hidden; isolation: isolate; animation: shake .35s 1.6s steps(2) 1; }
 @keyframes shake { 25% { transform: translate(6px, -4px); } 50% { transform: translate(-5px, 3px); } 75% { transform: translate(3px, 2px); } }
 .world { position: absolute; inset: -10%; z-index: -1; animation: push 24s ease-in-out infinite alternate; }
 @keyframes push { from { transform: scale(1); } to { transform: scale(1.12) translateY(-2%); } }

@@ -4,10 +4,10 @@ import Reveal from './Reveal';
 
 const { hero, ticker, lore, crew, picker, dates, victory, footer } = content;
 
-const Slam = ({ text, delay = 0 }) => (
+const Slam = ({ text, delay = 0, step = 90 }) => (
   <span className="slam" aria-label={text}>
     {[...text].map((ch, i) => (
-      <span key={i} aria-hidden="true" style={{ '--d': `${delay + i * 90}ms` }}>{ch}</span>
+      <span key={i} aria-hidden="true" style={{ '--d': `${delay + i * step}ms` }}>{ch}</span>
     ))}
   </span>
 );
@@ -23,8 +23,9 @@ export default function Home() {
           <div className="wrap hero-in">
             <p className="kicker">{hero.kicker}</p>
             <h1 className="mega">
-              <Slam text={hero.titleTop} />
-              <Slam text={hero.titleBottom} delay={420} />
+              {/* F … W … JAM: one beat per letter of the first word, then the whole second word at once */}
+              <Slam text={hero.titleTop} step={650} />
+              <Slam text={hero.titleBottom} delay={1300} step={0} />
             </h1>
             <p className="lead">{hero.lead}</p>
             <a className="btn" href="#data">{hero.cta} <span aria-hidden="true">→</span></a>
