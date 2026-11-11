@@ -1,17 +1,17 @@
 {
   "meta": {
     "title": "FW JAM — La prima GameJam",
-    "description": "Un invito. Un direttore artistico. Due sviluppatori. Infiniti token."
+    "description": "Un direttore artistico. Due sviluppatori. Infiniti token."
   },
   "hero": {
-    "kicker": "Invito ufficiale · Livello 1",
+    "kicker": "Solo per veri fwoci",
     "titleTop": "FW",
     "titleBottom": "JAM",
-    "lead": "La prima GameJam della storia della compagnia. Un weekend, un videogioco, un sogno che finalmente si avvera.",
+    "lead": "La prima GameJam per veri fwoci. Un weekend, un videogioco, un sogno che finalmente si avvera.",
     "cta": "Scegli il giorno",
     "pressStart": "PRESS START"
   },
-  "ticker": ["Game Jam", "Direttore artistico: Umberto", "2 dev", "1 Claude a testa", "Token illimitati*", "Nessuna pietà"],
+  "ticker": ["Game Jam", "Direttore artistico: Umberto", "2 dev", "1 Claude", "Token illimitati*", "Nessuna pietà"],
   "lore": {
     "heading": "La leggenda",
     "lines": [
@@ -19,19 +19,19 @@
       "Quest'anno, un uomo",
       "crea un mondo."
     ],
-    "body": "Ci abbiamo messo un po' a deciderci, lo sappiamo. Ma da questa compagnia di rincoglioniti è uscita un'idea sola, ed è grossa: costruire insieme il videogioco che hai sempre avuto in testa."
+    "body": "Ci abbiamo messo un po' a deciderci, lo sappiamo. Ma da questa compagnia di ritardati è uscita una sola idea, ambiziosa: costruire insieme il videogioco che hai sempre sognato."
   },
   "crew": {
     "heading": "La squadra",
     "members": [
       { "role": "Direttore artistico", "name": "Umberto", "power": "Visione assoluta. L'ultima parola su tutto.", "stat": "VISIONE 99" },
-      { "role": "Sviluppatore #1", "name": "Dev uno + Claude", "power": "Scrive codice più veloce di quanto tu cambi idea.", "stat": "TOKEN ∞" },
-      { "role": "Sviluppatore #2", "name": "Dev due + Claude", "power": "Brucia token come se non ci fosse un domani.", "stat": "CAFFÈ 404" }
+      { "role": "Sviluppatore #1", "name": "Sergio", "power": "Lui non pensa, lui prompta.", "stat": "TOKEN ∞" },
+      { "role": "Sviluppatore #2", "name": "Stefano", "power": "Il re del ragequit e della siesta.", "stat": "CAFFÈ 404" }
     ]
   },
   "picker": {
     "heading": "Scegli il giorno della battaglia",
-    "body": "Clicca una data e conferma. Puoi cambiare idea finché vuoi: vale l'ultima scelta.",
+    "body": "Clicca una data e conferma.",
     "confirm": "Conferma la data",
     "sending": "Invio in corso…",
     "already": "Hai scelto:",
@@ -40,7 +40,7 @@
   "dates": ["2026-11-28", "2026-11-29", "2026-12-05", "2026-12-06", "2026-12-19", "2026-12-20"],
   "victory": {
     "heading": "GAME ON",
-    "body": "Data salvata. I tuoi sviluppatori stanno già scaldando i token.",
+    "body": "Data salvata. Scaldiamo i motori.",
     "close": "Torna al sito"
   },
   "footer": "Fatto con amore, ritardo e troppi token. * I token non sono illimitati."
